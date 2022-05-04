@@ -1,0 +1,34 @@
+;< 19bca1126
+
+LXI H, 3020H
+
+MOV C, M;
+
+INX H
+
+MOV A, M
+
+DCR C
+
+LOOP: INX H
+
+MOV B, M
+
+CMP B
+
+JC SKIP
+
+MOV A,B
+
+SKIP: DCR C
+
+JNZ LOOP
+
+INX H
+
+MOV M,A
+
+HLT
+
+
+
