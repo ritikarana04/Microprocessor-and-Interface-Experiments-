@@ -1,0 +1,11 @@
+ # WAP to mask the lower nibble of a 8-bit number and then mask the higher nibble of a 8-bit number 
+LDA 0000H
+ANI 0FH ;mask higher nibble
+STA 0001H
+LDA 0000H
+ANI F0H; mask lower nibble
+STA 0002H
+HLT
+
+
+nibble  means cobination of 4-bits
