@@ -8,4 +8,4 @@ STA 0002H
 HLT
 
 
-nibble  means cobination of 4-bits
+(nibble  means cobination of 4-bits )
