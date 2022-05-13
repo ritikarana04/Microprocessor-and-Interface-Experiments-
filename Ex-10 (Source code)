@@ -1,0 +1,20 @@
+;< 19bca1126
+
+MVI B, 05H;
+X: MVI C, 05H;
+LXI H, 3000H;
+Y: MOV A,M;
+INX H;
+CMP M; 
+JC W; 
+JZ W;
+MOV D,M; 
+MOV M,A; 
+DCX H; 
+MOV M,D; 
+INX H;
+W: DCR C; 
+JNZ Y;
+DCR B; 
+JNZ X;
+HLT;
